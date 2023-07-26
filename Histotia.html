@@ -11,7 +11,8 @@
 <body>
     
     <header>
-        <div class="logo">     
+        <div class="logo-padre">    
+            <div class="logo"></div> 
             <a href="index.html">Logo</a>
         </div>
         <nav>
@@ -50,25 +51,26 @@
 
             <section class="seccion-video">
                     <h2>Un breve video para complementar lo visto</h2>
-                    <div class="contenedor-video">
-                        <video poster="./assets/imagenes/img-video.jpg" onclick="(event)=>{stopVideo(event)}"> 
+                <div class="contenedor-video">
+                        <video poster="./assets/imagenes/img-video.jpg" > 
                         <source src="./assets/video/historia-Comp.mp4" type="video/mp4">
                         <source src="./assets/video/historia-Comp.ogv" type="video/ogv">
                         </video>
-                    </div>
+                    
                     <div class="barra-rep">
                         <div class="botonera">
                             <button onclick="reproducir()">PLAY</button>
                             <button onclick="pausar()">PAUSE</button>                
                         </div>
-                        <p class="seccion-duracion">
+                         <p class="seccion-duracion">
                          <span class="tiempo-actual"></span>
-                            /
+                            / 00:
                             <span class="duracion"></span>
-                        </p>
+                        </p> 
                     </div>
-            
+                </div>
             </section>
+            
 
 
         </section>
