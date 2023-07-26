@@ -49,19 +49,12 @@ header {
 }  
 
 .logo {
-    width: 50px;
-    height: 50px;
-    background-color: grey;
-    perspective: 100px;
-    margin-left: 80px;
-    transform: rotateY(45deg) ;
-    
+
 }
 
 
 .logo:hover {
-    transition: 2s;
-    transform: rotateY('45deg');
+
 }
 
 
@@ -181,39 +174,7 @@ h2 {
 }
 
 
-/*Footer*/
-footer {
-    background-color: var(--verde);
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px;
-    color: #181D31;
-    }
 
-.footer-logo  {
-    display: flex;
-    justify-content: space-between;
-    width: 300px;
-    height: 60px
-}
-
-footer img {
-    height: 80px;
-}
-
-footer h3 {
-    color: var(--fondo);
-    font-size: 14px;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-footer p {
-    color: var(--fondo);
-    margin: 0 auto;
-}
 
 /*HISTORIA*/
 
@@ -249,7 +210,6 @@ footer p {
     padding: 100px 20px;
 }
 .contenedor-video {
-    padding: 5px;
     background-color: black;
 }
 
@@ -262,13 +222,18 @@ video {
 .barra-rep{
     display: flex;
     justify-content: space-between;
+    background-color: #1d1d1d;
+    border-radius: 15px;
+    padding: 2px 5px;
+    height: 45px;    
+    border: 5px solid black;
 }
 
 .barra-rep button{
     background-color: var(--crema);
     font-family: sans-serif;
     font-size: 16px;
-    padding: 10px 20px;
+    padding: 8px 30px;
     margin: auto;
     border-radius: 10px;
     box-shadow: 2px 3px var(--verde);
@@ -278,3 +243,36 @@ video {
     cursor:pointer;
 }
 
+/*Footer*/
+footer {
+    background-color: var(--verde);
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    color: #181D31;
+    }
+
+.footer-logo  {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    height: 60px
+}
+
+footer img {
+    height: 80px;
+}
+
+footer h3 {
+    color: var(--fondo);
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+footer p {
+    color: var(--fondo);
+    margin: 0 auto;
+}
