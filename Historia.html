@@ -10,22 +10,26 @@
 
 <body>
     
-    <header>
-        <div class="logo-padre">    
-            <div class="logo"></div> 
-            <a href="index.html">Logo</a>
-        </div>
-        <nav>
-            <a href="Histotia.html" class="nav-item historia">Historia</a>
-            <a href="#" class="nav-item">Juguemos</a>
-        </nav>
-    </header>
+    <nav>
+        <a href="index.html">
+            <svg width="200" height="80">
+                <rect class="rect-blanco" x="45" y="5" width="60" height="35" rx="5" id="mon1" fill="#F0E9D2"></rect>
+                <rect class="rect-azul" x="50" y="10" width="50" height="25" rx="5" id="mon2" fill="#495579"></rect>
+                <polygon class="polygon-blanco" points="55 45 ,95 45,115 62,30 62" fill="#F0E9D2" id="tec1"></polygon>
+                <polygon class="polygon-azul" points="57 48 ,92 48,104 58,43 58" fill="#495579" id="tec2"></polygon> 
+            </svg>
+    </a>
+    <ul class="menu">
+        <li class="item-li"><a class="nav-item" href="Historia.html">HISTORIA</a></li>
+        <li class="item-li"><a class="nav-item" href="Juguemos.html">JUGUEMOS</a></li>
+    </ul>
+    </nav>
 
-    
-    <main>
-        <div class="contenedor">
+        
+        <header>
             <h1>Historia de la programación</h1>
-        </div>
+        </header>
+        <main>
         <section class="contenedor-historia">
             <div class="pagina-historia">
                 <h2>El principio de la historia de la programación</h2>
@@ -38,21 +42,28 @@
                 </p>
                 <h2>Lenguaje de Ensamblaje</h2>
             </div>
-            <div class="pagina-historia">
+            <div class="pagina-historia-primeros">
+              
                 <h2>Los primeros lenguajes de programación</h2>
-                <p>FORmulaTRANslation es el lenguaje de programación más antiguo y que continúa en uso. Creada por John Backus en 1957, esta herramienta fue desarrollada para la computación científica de alto nivel, matemáticas y estadísticas. A día de hoy, este lenguaje se sigue usando en la industria automovilística, aeroespacial, gubernamental y la investigación. Por ejemplo, es muy útil para el pronóstico de los servicios meteorológicos
+                <p>FORmulaTRANslation es el lenguaje de programación más antiguo y que continúa en uso. Creada por John Backus en 1957, esta herramienta fue desarrollada para la computación científica de alto nivel, matemáticas y estadísticas. A día de hoy, este lenguaje se sigue usando en la industria automovilística, aeroespacial, gubernamental y la investigación. Por ejemplo, es muy útil para el pronóstico de los servicios meteorológicos.
+                    <br>
                 En 1959 se desarrollo Cobol, que está detrás de la mayoría de los sistemas de transacciones de negocio de los procesos de las tarjetas de crédito, ATMs (Modo de Transferencia Asíncrona), telefonía, sistemas hospitalarios, gobierno, sistemas automatizados y señales de tráfico.
+                <br>
                 El desarrollo de Cobol, creado por Grace Murray Hopper, muestra un lenguaje famipar y uniforme para transacciones empresariales. Por ejemplo, lo usan en el servicio postal estadounidense.
+                <br>
                 En 1964 se creo Basic, que fue diseñado como un lenguaje simppficado para aquellos que no tenían como base fuertes conocimientos técnicos o matemáticos.
-                Entre 1969 y 1973 se crea C,a manos de Dennis Ritchie para los laboratorios Bell Telephone para usarlos en el sistema Unix. Se le llamó «C» porque sus características derivaban de un lenguaje anterior llamado «B»
-                En 1964 se creo Basic, que fue diseñado como un lenguaje simppficado para aquellos que no tenían como base fuertes conocimientos técnicos o matemáticos.
-                Entre 1969 y 1973 se crea C,a manos de Dennis Ritchie para los laboratorios Bell Telephone para usarlos en el sistema Unix. Se le llamó «C» porque sus características derivaban de un lenguaje anterior llamado «B».</p>
+                <br>
+                Entre 1969 y 1973 se crea <strong>C</strong>,a manos de Dennis Ritchie para los laboratorios Bell Telephone para usarlos en el sistema Unix. Se le llamó «C» porque sus características derivaban de un lenguaje anterior llamado «B»
+                <br>
+                En los laboratorios Bells, Bjarne Stroustrup modificó el lenguaje C al C++, creando lo que muchos consideran el lenguaje de programación más popular que ha existido nunca. Además, ha sido listado en lo alto de los top ten de los lenguajes de programación desde 1986 y archivado en el Hall of Fame en 2003. Hoy en día es usado por Firefox, Office y Adobe PDF Reader
+                Esto dio el puntapie a que se sigan perfeccionando los lenguajes hasta llegar al os lenguajes de hoy en dia. </p>
+
             </div>
 
             <section class="seccion-video">
                     <h2>Un breve video para complementar lo visto</h2>
                 <div class="contenedor-video">
-                        <video poster="./assets/imagenes/img-video.jpg" > 
+                        <video width="100%" poster="./assets/imagenes/img-video.jpg" > 
                         <source src="./assets/video/historia-Comp.mp4" type="video/mp4">
                         <source src="./assets/video/historia-Comp.ogv" type="video/ogv">
                         </video>
@@ -68,9 +79,10 @@
                         </div>
                          <p class="seccion-duracion">
                          <span class="tiempo-actual"></span>
-                            / 00:
+                            / 
                             <span class="duracion"></span>
-                        </p> 
+                        </p>
+                         
                     </div>
                 </div>
             </section>
