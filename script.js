@@ -47,7 +47,16 @@ cajadrop2.addEventListener('dragover',(event)=>{
     let datoGuardado= event.dataTransfer.getData("Text");
 
     cajadrop2.innerHTML=`<img src= ${datoGuardado} alt="rompecabeza2"/>`
+    
+    imagen1.classList.add("hide");
+
+    event.dataTransfer.clearData("Text");
+
+    datoGuardado.style.backgrounSize=contain;
  });
+
+
+   
 
 
 let imagen2=document.querySelector('#imagen2');
@@ -65,7 +74,15 @@ cajadrop.addEventListener('dragover',(event)=>{
     let datoGuardado= event.dataTransfer.getData("Text");
 
     cajadrop.innerHTML=`<img src= ${datoGuardado} alt="rompecabeza"/>`
+    
+    imagen2.classList.add("hide");
+
+    event.dataTransfer.clearData("Text");
+
+    
+    
  });
+
 
 
  let imagen3=document.querySelector('#imagen3');
@@ -83,72 +100,17 @@ cajadrop.addEventListener('dragover',(event)=>{
      let datoGuardado= event.dataTransfer.getData("Text");
  
      cajadrop3.innerHTML=`<img src= ${datoGuardado} alt="rompecabeza"/>`
+     
+     imagen3.classList.add("hide");
+
+     event.dataTransfer.clearData("Text");
+     
   });
 
-  
 
 
+//----------------------------------------------------------------------------------
 
-
-
-
-// let menu= document.querySelector('.menu');
-// let flag=false;
-// let contador=0;
-
-
-// function iniciar(){
-//     var imagenes =document.querySelectorAll('#caja-imagenes img');
-//      soltar-imagen=document.getElementById('cajadrop');  
-//      soltar-imagen2 =document.getElementById('cajadrop2'); 
-//      soltar-imagen3 = document.getElementById('cajadrop3'); 
-
-//     for(var i=0; i<imagenes.length; i++){
-//         imagenes[i].addEventListener('dragstart', arrastrado, false);
-//         // imagenes[i].addEventListener('dragend', finalizado, false);
-//     }
-
-//     soltar.addEventListener('dragenter', function(e){
-//     e.preventDefault(); }, false);
-//     soltar.addEventListener('dragover', function(e){
-//     e.preventDefault(); }, false)
-      
-//     ;
-//     soltar.addEventListener('drop', soltado, false);
-
-
-//     soltar2.addEventListener('dragenter', function(e){
-//         e.preventDefault(); }, false);
-//     soltar2.addEventListener('dragover', function(e){
-//     e.preventDefault(); }, false);
-//     soltar2.addEventListener('drop', soltado, false);
-
-
-//     soltar3.addEventListener('dragenter', function(e){
-//         e.preventDefault(); }, false);
-//     soltar3.addEventListener('dragover', function(e){
-//     e.preventDefault(); }, false);
-//     soltar3.addEventListener('drop', soltado, false);
-
-// }
-// function arrastrado(e){
-//     elemento=e.target;
-//     e.dataTransfer.setData('Text', elemento.getAttribute('id'));
-// }
-
-// async function soltado(e){
-//     e.preventDefault();
-//     console.log(e)
-//     let id=e.dataTransfer.getData('Text');
-//     let imagen=document.getElementById(id);
-//     imagen.style.display= 'none';
-//      e.target.innerHTML='<img src="'+imagen.src+'" height="400px" width="275px">';
-//     contador++
-
-
-// }
-// function reinicio() {
-//     window.location.reload();
-// }
-// iniciar()
-// //window.addEventListener('load', iniciar, false);
+function reinicio() {
+    window.location.reload();
+}
