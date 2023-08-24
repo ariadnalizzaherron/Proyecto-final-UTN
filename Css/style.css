@@ -28,7 +28,7 @@ body {
     background-color:#181D31;
 }
 
-main {
+.main-hist-jue {
     padding: 100px 20px;
 }
 
@@ -333,6 +333,7 @@ button:active {
 
 
 /* PÁGINA JUGUEMOS */
+/* Estilos generales */
 .juego {
     display: flex;
     flex-direction: column;
@@ -353,23 +354,24 @@ button:active {
     text-align: center;
     justify-content: center;
     align-items: center;
+    background-size: cover;
+    background-position: center;
 }
 
 .caja p {
     color: white;
 }
 
-#piezas {
+.piezas {
     display: flex;
     flex-direction: row;
     gap: 10px;
     margin: 40px;
 }
 
-.caja:hover{
+.caja:hover {
     background-color: #1d1d1d;
 }
-
 
 .reinicio {
     display: flex;
@@ -382,10 +384,10 @@ button:active {
     box-shadow: 2px 3px var(--verde);
     color: #181D31;
     font-weight: 300;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-#imagen1{
+#imagen1 {
     width: 275px;
     height: 400px;
 }
@@ -403,6 +405,7 @@ button:active {
 .hide {
     display: none;
 }
+
 
 /*FOOTER*/
 footer {

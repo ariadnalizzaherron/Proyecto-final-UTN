@@ -28,7 +28,7 @@ const pausar=()=>{
 }
 
 
-//------------------------------------JUGUEMOS-----------------------------------------------------------------------------
+//-----------------------------------------------JUGUEMOS-----------------------------------------------------------------------------
 
 let imagen1=document.querySelector('#imagen1');
 let cajadrop2= document.querySelector('#cajadrop2');
@@ -51,8 +51,7 @@ cajadrop2.addEventListener('dragover',(event)=>{
     imagen1.classList.add("hide");
 
     event.dataTransfer.clearData("Text");
-
-    datoGuardado.style.backgrounSize=contain;
+    cajadrop2.style.backgroundSize = 'contain';
  });
 
 
@@ -78,7 +77,7 @@ cajadrop.addEventListener('dragover',(event)=>{
     imagen2.classList.add("hide");
 
     event.dataTransfer.clearData("Text");
-
+    cajadrop.style.backgroundSize = 'contain';
     
     
  });
@@ -104,6 +103,8 @@ cajadrop.addEventListener('dragover',(event)=>{
      imagen3.classList.add("hide");
 
      event.dataTransfer.clearData("Text");
+
+     cajadrop3.style.backgroundSize = 'contain';
      
   });
 
